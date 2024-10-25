@@ -1,0 +1,28 @@
+Here we can declare threee types of variable 
+let, var, const,
+var datatype is not restricted we can implement whereever we can 
+Ex.    
+            {
+                var num = 10;
+            } 
+            console.log(num);
+            we can call the datatype outside the function it will print .there is no restriction .
+let and const have restriction 
+Ex.     
+            {
+                let a = 20;
+                console.log(a);
+            }  
+            we can print the value in the function or block
+            const b = 30;
+            console.log(b);
+            we can print the value without using block. here , by using const datatype we cannot override the value.
+
+
+Arrow Functions
+arrow function must indicate the
+ES5
+ function name(){
+   console.log("hi");
+}
+name();
