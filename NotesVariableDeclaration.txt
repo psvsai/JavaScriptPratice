@@ -20,9 +20,14 @@ Ex.
 
 
 Arrow Functions
+--------------------------------------------------------------------------------------------------------
 arrow function must indicate the
-ES5
+ES5 calling Function
  function name(){
    console.log("hi");
 }
 name();
+---------------------------------------------------------------------------------------------------------
+ES6 Arrow Functions
+Const sum = (a,b) => a+b ;
+let  
