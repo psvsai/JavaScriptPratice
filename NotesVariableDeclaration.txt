@@ -27,7 +27,15 @@ ES5 calling Function
    console.log("hi");
 }
 name();
+
+ES5 Return function syntax
+function new(){
+    return();
+}
+let old = new();
+console.log(old);
 ---------------------------------------------------------------------------------------------------------
 ES6 Arrow Functions
-Const sum = (a,b) => a+b ;
-let  
+Const test = (a,b) => a+b ;
+let sum = test(2,8);
+console.log(sum);
