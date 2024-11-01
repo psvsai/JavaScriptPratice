@@ -1,0 +1,74 @@
+Step 1: Understanding Variables and Data Types
+Q: Create variables to store your name, age, and city using let, const, and var. Try changing the value of each variable and observe what happens.
+Q: Declare a string variable with your favorite quote. Use a string method to convert it to uppercase.
+Q: Create a number variable to represent your age. Write code to increment the age by 1.
+Q: Declare a boolean variable to indicate if you are a student. Toggle its value from true to false.
+Q: Create an array of your favorite fruits. Add a new fruit to the beginning of the array.
+Q: Declare an object representing a car with properties: make, model, and year. Log the car’s make to the console.
+Q: Create a variable with a null value and another with an undefined value. Print both to the console.
+Q: Declare a string variable with your full name. Use a string method to extract and log just your first name.
+Q: Create an object representing a book with properties title, author, and pages. Add a new property genre to the object.
+Q: Declare a variable using var inside a function. Try accessing this variable outside the function. What happens?
+
+
+Step 2: Learning Functions
+Q: Write a function that takes two numbers as arguments and returns their sum. Call the function with two numbers and log the result.
+Q: Convert the above function into an arrow function and log the result.
+Q: Write a function that returns the square of a number. Use default parameters to make the number default to 2 if no argument is provided.
+Q: Write a function that takes a string as a parameter and returns the string reversed.
+Q: Create a function that logs a greeting message using a name passed as an argument. Call the function multiple times with different names.
+Q: Write an Immediately Invoked Function Expression (IIFE) that logs "This function runs immediately!" to the console.
+Q: Write a function that returns an object with properties name, age, and city. Call the function and log the returned object.
+Q: Write a recursive function that calculates the factorial of a number. Test it with the number 5.
+Q: Write a function that takes a callback function as an argument and executes it. Test it with a callback that logs a message.
+Q: Write a function that logs the square of a number passed as an argument. Use arrow function syntax for this task.
+
+
+
+Step 3: Working with Objects and Arrays
+Q: Create an object representing a student with properties name, age, and grades. Add a method to the object that logs a summary of the student’s details.
+Q: Use object destructuring to extract the name and age properties from the student object created above.
+Q: Create an object with a nested object for address. Access and log the city from the nested object.
+Q: Create an array of numbers. Use a loop to log each number multiplied by 3.
+Q: Use array destructuring to assign the first three elements of an array to separate variables. Log these variables.
+Q: Use the spread operator to merge two arrays into a new array and add a new element at the end. Log the new array.
+Q: Merge two objects into a new object using the spread operator. Log the resulting object.
+Q: Write a function that takes an object and updates its city property. Log the updated object.
+Q: Create an array of objects representing different movies. Use a loop to log the title of each movie.
+Q: Write a function that filters out even numbers from an array and returns the remaining odd numbers. Log the result.
+
+
+
+
+Step 4: Using Array Methods
+Q: Use the map method to create a new array that contains the square roots of numbers in an existing array. Log the new array.
+Q: Use the filter method to create a new array containing only strings that start with the letter "A" from an existing array of strings. Log the new array.
+Q: Use the reduce method to calculate the product of all numbers in an array. Log the result.
+Q: Use the find method to locate the first number in an array that is greater than 10. Log the result.
+Q: Use the some method to check if any string in an array has a length greater than 5. Log the result.
+Q: Use the every method to check if all numbers in an array are positive. Log the result.
+Q: Write a function that sorts an array of numbers in descending order. Log the sorted array.
+Q: Chain the filter, map, and reduce methods to filter out even numbers from an array, square the remaining numbers, and find their sum. Log the result.
+Q: Use the reverse method to reverse the order of elements in an array. Log the resulting array.
+Q: Use the flat method to flatten a deeply nested array into a single-level array. Log the resulting array.
+
+
+Step 5: Working with Promises (Remove this step)
+
+
+Step 6: Working with Async/Await (Remove this step)
+
+
+Step 7: Fetch API for HTTP Requests
+
+Q: Write a function that makes a GET request to https://jsonplaceholder.typicode.com/users using the Fetch API. Log the names of all users.
+Q: Create a function that makes a POST request to https://jsonplaceholder.typicode.com/posts with a new post object. Log the response.
+Q: Write a function that makes a GET request to https://jsonplaceholder.typicode.com/posts/1 and logs the post’s title and body.
+Q: Create a function that handles errors when making a fetch request to an invalid URL. Log the error message to the console.
+Q: Write a function that fetches data from https://jsonplaceholder.typicode.com/comments and filters out comments containing a specific keyword. Log the filtered comments.
+Step 8: Combining Everything to Work with APIs
+Q: Write a function that fetches a list of users from https://jsonplaceholder.typicode.com/users and processes the data to return an array of user names.
+Q: Create a function that fetches posts from https://jsonplaceholder.typicode.com/posts and sorts them by title. Log the sorted list.
+Q: Write a function that fetches albums from https://jsonplaceholder.typicode.com/albums and counts how many albums there are. Log the total count.
+Q: Create a function that fetches data from https://jsonplaceholder.typicode.com/todos and returns only the completed todos. Log the completed todos.
+Q: Write a function that fetches posts from https://jsonplaceholder.typicode.com/posts and updates the title of the first post using a PUT request. Log the updated post.

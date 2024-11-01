@@ -39,3 +39,9 @@ ES6 Arrow Functions
 Const test = (a,b) => a+b ;
 let sum = test(2,8);
 console.log(sum);
+
+-----------------------------------------------------------------------------------------------------------
+New Topic
+Async/Await
+Async and await are like promise '"Sleeper Cells"'.
+Async and Await handles "http" promise request.

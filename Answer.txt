@@ -1,0 +1,401 @@
+
+let name = "John"; 
+const age = 30; 
+var city = "New York"; 
+
+name = "Jane"; // Reassigned successfully
+age = 31; // Error: Assignment to constant variable.
+city = "Los Angeles"; // Reassigned successfully
+
+
+
+let quote = "The quick brown fox jumps over the lazy dog.";
+console.log(quote.toUpperCase()); // Outputs: THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+
+
+let age = 25;
+age += 1; 
+console.log(age); // Outputs: 26
+
+
+let isStudent = true;
+isStudent = !isStudent; 
+console.log(isStudent); // Outputs: false
+
+
+let fruits = ["apple", "banana", "orange"];
+fruits.unshift("grape");
+console.log(fruits); // Outputs: ["grape", "apple", "banana", "orange"]
+
+
+let car = {
+  make: "Toyota",
+  model: "Corolla",
+  year: 2020
+};
+console.log(car.make); // Outputs: Toyota
+
+
+
+let value1 = null;
+let value2 = undefined;
+console.log(value1); // Outputs: null
+console.log(value2); // Outputs: undefined
+
+
+
+let fullName = "John Doe";
+console.log(fullName.split(" ")[0]); // Outputs: John
+
+
+let book = {
+  title: "1984",
+  author: "George Orwell",
+  pages: 328
+};
+book.genre = "Dystopian";
+console.log(book); // Outputs: { title: "1984", author: "George Orwell", pages: 328, genre: "Dystopian" }
+
+
+
+function testVar() {
+  var city = "Paris";
+  console.log(city); // Outputs:
+
+ Paris
+}
+testVar();
+console.log(city); // ReferenceError: city is not defined
+
+
+function sum(a, b) {
+  return a + b;
+}
+console.log(sum(5, 3)); // Outputs: 8
+const sum = (a, b) => a + b;
+console.log(sum(5, 3)); // Outputs: 8
+
+
+
+function square(number = 2) {
+  return number * number;
+}
+console.log(square()); // Outputs: 4
+console.log(square(3)); // Outputs: 9
+
+
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+console.log(reverseString("hello")); // Outputs: olleh
+
+
+
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+greet("Alice"); // Outputs: Hello, Alice!
+greet("Bob"); // Outputs: Hello, Bob!
+
+
+
+(function() {
+  console.log("This function runs immediately!");
+})(); // Outputs: This function runs immediately!
+
+
+
+function createPerson() {
+  return {
+    name: "John",
+    age: 30,
+    city: "New York"
+  };
+}
+console.log(createPerson()); // Outputs: {name: "John", age: 30, city: "New York"}
+
+
+
+function factorial(n) {
+  if (n === 0) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+console.log(factorial(5)); // Outputs: 120
+
+
+
+function doSomething(callback) {
+  callback();
+}
+function myCallback() {
+  console.log("Callback function executed");
+}
+doSomething(myCallback); // Outputs: Callback function executed
+
+
+
+const logSquare = (num) => console.log(num * num);
+logSquare(4); // Outputs: 16
+let student = {
+  name: "Alice",
+  age: 20,
+  grades: {
+    math: "A",
+    science: "B"
+  },
+  getSummary: function() {
+    console.log(`Name: ${this.name}, Age: ${this.age}, Grades: ${JSON.stringify(this.grades)}`);
+  }
+};
+student.getSummary(); // Outputs: Name: Alice, Age: 20, Grades: {"math":"A","science":"B"}
+let { name, age } = student;
+console.log(name); // Outputs: Alice
+console.log(age); // Outputs: 20
+
+
+
+let user = {
+  name: "John",
+  address: {
+    city: "New York",
+    street: "5th Avenue"
+  }
+};
+console.log(user.address.city); // Outputs: New York
+
+
+
+let numbers = [1, 2, 3, 4, 5];
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i] * 3);
+}
+// Outputs: 3, 6, 9, 12, 15
+
+
+
+let array = [10, 20, 30];
+let [first, second, third] = array;
+console.log(first); // Outputs: 10
+console.log(second); // Outputs: 20
+console.log(third); // Outputs: 30
+
+
+
+
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let newArray = [...arr1, ...arr2, 7];
+console.log(newArray); // Outputs: [1, 2, 3, 4, 5, 6, 7]
+
+
+
+
+let obj1 = { name: "Alice" };
+let obj2 = { age: 25 };
+let mergedObj = { ...obj1, ...obj2 };
+console.log(mergedObj); // Outputs: { name: "Alice", age: 25 }
+
+
+
+function updateCity(person, newCity) {
+  person.city = newCity;
+  return person;
+}
+let person = { name: "John", city: "Paris" };
+console.log(updateCity(person, "London")); // Outputs: { name: "John", city: "London" }
+
+
+  { title: "Inception", director: "Christopher Nolan" },
+  { title: "The Matrix", director: "Wachowski Brothers" },
+  { title: "Interstellar", director: "Christopher Nolan" }
+];
+movies.forEach(movie => {
+  console.log(movie.title);
+});
+// Outputs: Inception, The Matrix, Interstellar
+
+
+
+function filterOddNumbers(numbers) {
+  return numbers.filter(num => num % 2 !== 0);
+}
+let numbers = [1, 2, 3, 4, 5, 6];
+console.log(filterOddNumbers(numbers)); // Outputs: [1, 3, 5]
+
+
+
+let numbers = [1, 4, 9, 16];
+let squareRoots = numbers.map(num => Math.sqrt(num));
+console.log(squareRoots); // Outputs: [1, 2, 3, 4]
+
+
+
+let strings = ["Apple", "Banana", "Apricot", "Cherry"];
+let aStrings = strings.filter(str => str.startsWith("A"));
+console.log(aStrings); // Outputs: ["Apple", "Apricot"]
+
+
+
+let numbers = [2, 3, 4];
+let product = numbers.reduce((acc, curr) => acc * curr, 1);
+console.log(product); // Outputs: 24
+
+
+
+let numbers = [5, 8, 12, 19];
+let firstGreaterThanTen = numbers.find(num => num > 10);
+console.log(firstGreaterThanTen); // Outputs: 12
+
+
+
+let strings = ["apple", "banana", "pear"];
+let hasLongString = strings.some(str => str.length > 5);
+console.log(hasLongString); // Outputs: true
+
+
+let numbers = [3, 6, 9, 12];
+let allPositive = numbers.every(num => num > 0);
+console.log(allPositive); // Outputs: true
+
+
+let numbers = [10, 2, 30, 25];
+numbers.sort((a, b) => b - a);
+console.log(numbers); // Outputs: [30, 25, 10, 2]
+
+
+let numbers = [1, 2, 3, 4, 5, 6];
+let result = numbers
+  .filter(num => num % 2 !== 0)
+  .map(num => num * num)
+  .reduce((acc, curr) => acc + curr, 0);
+console.log(result); // Outputs: 35
+
+
+
+let letters = ["a", "b", "c", "d"];
+letters.reverse();
+console.log(letters); // Outputs: ["d", "c", "b", "a"]
+
+
+let nestedArray = [1, [2, [3, [4]]]];
+let flatArray = nestedArray.flat(3);
+console.log(flatArray); // Outputs: [1, 2, 3, 4]
+
+
+async function fetchUsers() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/users');
+  const users = await response.json();
+  users.forEach(user => console.log(user.name));
+}
+fetchUsers(); // Outputs the names of all users
+
+
+
+
+async function createPost() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+    method: 'POST',
+    body: JSON.stringify({
+      title: 'foo',
+      body: 'bar',
+      userId: 1
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    }
+  });
+  const data = await response.json();
+  console.log(data); // Outputs the created post object
+}
+createPost();
+
+
+
+async function fetchPost() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+  const post = await response.json();
+  console.log(post.title); // Outputs: the title of the post
+  console.log(post.body);  // Outputs: the body of the post
+}
+fetchPost();
+async function fetchWithErrorHandling() {
+  try {
+    const response = await fetch('https://invalid-url');
+    const data = await response.json();
+  } catch (error) {
+    console.error('Fetch error:', error); // Outputs the error message
+  }
+}
+fetchWithErrorHandling();
+
+
+
+async function filterCommentsByKeyword(keyword) {
+  const response = await fetch('https://jsonplaceholder.typicode.com/comments');
+  const comments = await response.json();
+  const filteredComments = comments.filter(comment => comment.body.includes(keyword));
+  console.log(filteredComments); // Outputs the
+
+ filtered comments
+}
+filterCommentsByKeyword('qui');
+async function fetchUserNames() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/users');
+  const users = await response.json();
+  const names = users.map(user => user.name);
+  console.log(names); // Outputs an array of user names
+}
+fetchUserNames();
+
+
+async function fetchAndSortPosts() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+  const posts = await response.json();
+  posts.sort((a, b) => a.title.localeCompare(b.title));
+  console.log(posts); // Outputs the sorted posts
+}
+fetchAndSortPosts();
+
+
+
+async function countAlbums() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/albums');
+  const albums = await response.json();
+  console.log(`Total albums: ${albums.length}`); // Outputs the total number of albums
+}
+countAlbums();
+
+
+
+
+
+async function fetchCompletedTodos() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/todos');
+  const todos = await response.json();
+  const completedTodos = todos.filter(todo => todo.completed);
+  console.log(completedTodos); // Outputs the completed todos
+}
+fetchCompletedTodos();
+
+
+
+async function updateFirstPostTitle() {
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts/1', {
+    method: 'PUT',
+    body: JSON.stringify({
+      id: 1,
+      title: 'Updated Title',
+      body: 'Updated body',
+      userId: 1
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    }
+  });
+  const updatedPost = await response.json();
+  console.log(updatedPost); // Outputs the updated post object
+}
+updateFirstPostTitle();
+These exercises and answers should give you a solid understanding of working with variables, data types, functions, objects, arrays, and making HTTP requests using the Fetch API in JavaScript.
