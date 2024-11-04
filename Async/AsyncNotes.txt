@@ -1,0 +1,13 @@
+How many Pattern are there in async/await function ?(Chatgpt)
+Summary Table of Use Cases
+                                Pattern	Use Case
+
+Basic Async Function	                           General async operations that return Promises.
+Async with try/catch	                           Error handling in async functions.
+Promise.all with Async/Await	                   Parallel async operations, waiting for all to complete.
+Async in Loops                      	           Running async operations sequentially.
+Promise.allSettled	                               Handling multiple async operations without stopping on failure.
+Async within Array.map                     	       Concurrent async operations on array elements.
+Async with Timeout	                               Introducing delays between async tasks.
+Promise.race	                                   Setting timeouts or time limits on async operations.
+Recursive Async Functions	                       Handling retry logic or recursive data processing.

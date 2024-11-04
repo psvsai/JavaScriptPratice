@@ -16,3 +16,10 @@ console.log(student);
 let fruits = ["apple","banana","cherry","guava"];
 fruits.unshift("grapes");
 console.log(fruits);
+
+
+//04-11-2024
+let a = null;
+let b = undefined;
+console.log(a);
+console.log(b);

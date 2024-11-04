@@ -1,5 +1,5 @@
 //  31-10-2024
-// JS basic arrays practice
+// greJS basic arrays practice
 // adding array in the beginning the keyword used is (unshift) 
 
 let fruits = ["apple","banana","cherry","watermelon"];
