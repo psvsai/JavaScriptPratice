@@ -20,8 +20,6 @@ todo.WTBLinJAVA = "Basic from kunal for DSA RoadMap";
 console.log(todo.whattobelearninJS);
 console.log(todo.WTBLinJAVA);
 
-
-
 function fetch(String){
     return String;
 }
@@ -59,3 +57,18 @@ async function weatherdata(){
     }
 }
 weatherdata();
+
+//js bin practice
+let name = ["psvsai","mahesh","sai"];
+name.unshift("pasupuleti");
+name.push("sri")
+console.log(name);
+console.log(name[3]);
+
+let weather = {
+  temp : 27,
+  humidity : "50%",
+  wind : "10km/h",
+};
+console.log(weather.humidity);
+
