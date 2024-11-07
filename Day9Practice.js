@@ -67,3 +67,23 @@ async function fetchdata(){
     }
 }
 fetchdata();
+
+async function vote(){
+    let RightToVote = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            let age = 15;
+            if(age>=18){
+               resolve("Eligible for vote");
+            }else{
+                reject("Not eligible to vote");
+            }
+        },5000);
+    });
+    try{
+        let result = await RightToVote;
+        console.log(result);
+    }catch(error){
+        console.log(error);
+    }
+}
+vote();

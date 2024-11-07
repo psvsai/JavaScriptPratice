@@ -39,6 +39,23 @@ function FSD(){
   console.log(front);
 }
 FSD();
-// const age = () =>{
-     
-// }
+
+const JS = () => {
+    concept = ["Datatypes","function calling", "functio return","difference b/w ES5 method and es6"];
+    concept2 =["Arrow function","Async function","array","maps","filter"];
+    console.log(concept);
+    let topic = concept.filter((data)=>data.length>5);
+    console.log(topic);
+    topic.map((data)=> console.log(data));
+    console.log(concept2); 
+    let result = concept2.filter((data1)=>data1.length>=5);
+    console.log(result);
+    result.map((data1)=>console.log(data1));
+}
+JS();
+const result1 = () =>{
+    let age = 18;
+       if(age1 =>18){
+       console.log
+       }
+}
