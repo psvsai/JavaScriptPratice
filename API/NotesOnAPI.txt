@@ -1,0 +1,4 @@
+what is API?
+API :- Application Programming Interface
+API's are mechanism that enable two system components to communicate with 
+each other using set of defination and protocols(rules).

@@ -67,7 +67,8 @@ async function fetchdata(){
     }
 }
 fetchdata();
-
+// async function for Right to vote
+// comit changes
 async function vote(){
     let RightToVote = new Promise((resolve,reject)=>{
         setTimeout(()=>{
