@@ -57,3 +57,4 @@ const thingToDoTmrw = {
 console.log(thingToDoTmrw.morning);
 console.log(thingToDoTmrw.afternoon);
 console.log(thingToDoTmrw.night());
+ 
