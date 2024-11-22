@@ -73,3 +73,4 @@ squ.map((squ)=>console.log(squ*squ));
 console.log(squ);
 }
 Square();
+
