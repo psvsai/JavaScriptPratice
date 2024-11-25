@@ -99,7 +99,23 @@ function greeting(name){
 console.log(greeting( "psvsai"));
 console.log(greeting( "Sri"));
 // Q: Write an Immediately Invoked Function Expression (IIFE) that logs "This function runs immediately!" to the console.
+(function(){
+    console.log("Here is a Immediately Invoked Funciton Expression (IIFE)")
+})();
+(function(){
+    console.log("This function runs immediately!");
+})();
 // Q: Write a function that returns an object with properties name, age, and city. Call the function and log the returned object.
+function properties(){
+     return{
+        name :"PSV Sai Mahes",
+        age  : 24,
+        city :"Hyderabad",
+     };
+}
+console.log(properties());
 // Q: Write a recursive function that calculates the factorial of a number. Test it with the number 5.
 // Q: Write a function that takes a callback function as an argument and executes it. Test it with a callback that logs a message.
 // Q: Write a  function that logs the square of a number passed as an argument. Use arrow function syntax for this task.
+const squareOff = (a) => a*a;
+console.log(squareOff(6));  
