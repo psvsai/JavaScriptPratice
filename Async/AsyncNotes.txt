@@ -11,3 +11,87 @@ Async within Array.map                     	       Concurrent async operations o
 Async with Timeout	                               Introducing delays between async tasks.
 Promise.race	                                   Setting timeouts or time limits on async operations.
 Recursive Async Functions	                       Handling retry logic or recursive data processing.
+
+
+
+
+
+
+how many way to handlintg the error
+ChatGPT said:
+Error handling in JavaScript can be approached in several ways depending on the context and requirements of your code. Below are the primary methods:
+
+1. try...catch Block
+This is the most common and straightforward way to handle errors in synchronous and asynchronous code.
+
+Example (Synchronous Code):
+try {
+    let result = riskyOperation();
+    console.log(result);
+} catch (error) {
+    console.error("Error occurred:", error.message);
+}
+Example (Asynchronous Code with async/await):
+async function fetchData() {
+    try {
+        const response = await fetch('https://api.example.com/data');
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error("Error fetching data:", error.message);
+    }
+}
+When to use?
+
+When you need fine-grained error handling for specific blocks of code.
+For both synchronous and asynchronous operations.
+2. Using .catch() with Promises
+You can handle errors when using promises with the .catch() method.
+
+Example:
+fetch('https://api.example.com/data')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(error => console.error("Error fetching data:", error));
+When to use?
+
+When working with promises without async/await.
+For centralized error handling in a promise chain.
+3. finally Block
+The finally block is used to execute code after try or catch, regardless of whether an error occurred.
+
+Example:
+try {
+    let result = riskyOperation();
+    console.log(result);
+} catch (error) {
+    console.error("Error occurred:", error.message);
+} finally {
+    console.log("Execution completed.");
+}
+When to use?
+
+When you need to perform cleanup tasks (e.g., closing resources, logging).
+4. Default Parameters for Error Handling
+Provide default values or fallback logic to handle errors without throwing exceptions.
+
+Example:
+function divide(a, b = 1) {
+    return b === 0 ? "Cannot divide by zero" : a / b;
+}
+
+console.log(divide(10, 0)); // Output: "Cannot divide by zero"
+When to use?
+
+When you want to gracefully handle invalid input or avoid exceptions.
+5. Event Listeners for Global Error Handling
+Use global event handlers to catch unhandled errors.
+
+In the Browser:
+window.addEventListener("error", (event) => {
+    console.error("Global error:", event.message);
+});
+
+window.addEventListener("unhandledrejection", (event) => {
+    console.error("Unhandled promise rejection:", event.reason);
+});

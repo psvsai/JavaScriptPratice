@@ -116,6 +116,51 @@ function properties(){
 console.log(properties());
 // Q: Write a recursive function that calculates the factorial of a number. Test it with the number 5.
 // Q: Write a function that takes a callback function as an argument and executes it. Test it with a callback that logs a message.
+function snapchat(callback){
+    callback();
+}
+{
+function callback(){
+        console.log("Need to understand more deeply");
+    }
+}
+snapchat(callback);
 // Q: Write a  function that logs the square of a number passed as an argument. Use arrow function syntax for this task.
 const squareOff = (a) => a*a;
 console.log(squareOff(6));  
+
+
+//  ***   Step 3: Working with Objects and Arrays *** \\\
+
+// Q: Create an object representing a student with properties name, age, and grades. Add a method to the object that logs a summary of the student’s details.
+// ans there are many ways to add methods in the object 
+// Ex :-   adding object inside the block here, template litreal are used 
+var student = {
+    name : "PSV SAI",
+    age  : 24,
+    grade : "78%",
+    summary (){
+        return `person completed he's education in 2021 and seekin or searcing for a job Name = ,${this.name}, Age = ${this.age}, Grade = ${this.grade}! `;
+    }
+}
+console.log(student.summary());
+// ex :2 adding meathod outside the block
+var student1 ={
+    name : "Mahesh",
+    age : 25,
+    grade : "80%",
+};
+ student1.summary= function(){
+    return `Mahesh searching for IT job ,he need to learn many skill that he can showcase infront of interviewer , Name = ${this.name}, Age = ${this.age}, Grade = ${this.grade}!`;
+ };
+console.log(student1.summary());
+
+// Q: Use object destructuring to extract the name and age properties from the student object created above.
+// Q: Create an object with a nested object for address. Access and log the city from the nested object.
+// Q: Create an array of numbers. Use a loop to log each number multiplied by 3.
+// Q: Use array destructuring to assign the first three elements of an array to separate variables. Log these variables.
+// Q: Use the spread operator to merge two arrays into a new array and add a new element at the end. Log the new array.
+// Q: Merge two objects into a new object using the spread operator. Log the resulting object.
+// Q: Write a function that takes an object and updates its city property. Log the updated object.
+// Q: Create an array of objects representing different movies. Use a loop to log the title of each movie.
+// Q: Write a function that filters out even numbers from an array and returns the remaining odd numbers. Log the result.
