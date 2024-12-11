@@ -52,3 +52,19 @@ async function fetchdata(){
     }
   }
   fetchdata();
+
+  // Squential Data
+  async function badminton() {
+    try{
+      var response1 = await fetch('https://jsonplaceholder.typicode.com/posts/1');
+      var result1 = await response1.json();
+      console.log(result1);
+     
+      var response2 = await fetch('https://jsonplaceholder.typicode.com/posts/2');
+      var result2 = await response2.json();
+      console.log(result2);
+    }catch(error){
+      console.log(error);
+    }
+  }
+  badminton();

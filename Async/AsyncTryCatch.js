@@ -1,3 +1,5 @@
+// error handling
+// Using try...catch for Error Handling it is most recommend way of approach thy error 
 async function fetchdata(){
     let data = new Promise((resolve,reject)=>{
       let success = false;

@@ -156,9 +156,62 @@ var student1 ={
 console.log(student1.summary());
 
 // Q: Use object destructuring to extract the name and age properties from the student object created above.
+ var student2 = {
+    nameOfCrew : "Luffy",
+    ageOfCrew  : 14,
+    fruit : "Gum-Gumno fruit",
+    bounty : "12,34,56789 berry"
+ }
+ var {nameOfCrew ,ageOfCrew ,fruit,bounty} = student2;
+ console.log(nameOfCrew);
+ console.log(ageOfCrew);
+ console.log(fruit);
+ console.log(bounty); 
 // Q: Create an object with a nested object for address. Access and log the city from the nested object.
+const employee = {
+    nameOfTheEmployee : "PSV Sai Mahesh",
+    id : 201979,
+    addressForVerification : {
+        addressOfTheEmployee : "14-14 BDl Colony ,Badaghpet , Balapur(M) RR Dist",
+        pincode : 500005,
+        cityOfLiving : "Hyderabad",
+    },
+    education :{
+        degree : "VDA Degree College",
+        passedOut : 2021,
+    },
+};
+const {nameOfTheEmployee,id,addressForVerification:{addressOfTheEmployee,pincode,cityOfLiving},education:{degree,passedOut}} =employee;
+console.log(nameOfTheEmployee);
+console.log(id);
+console.log(cityOfLiving);
+
+const sitcom1 ={
+    nam:"Friends",
+    year:1994,
+    character : ["Ross","Rachel","Chandler","Monica","joey","phobe"] ,
+
+    nam1 :{
+        nam : "How I met your mother",
+        year : 2008,
+}
+}
+const {nam,year,character} = sitcom1;
+console.log(nam);
+console.log(year);
+console.log(sitcom1.nam1.nam);
 // Q: Create an array of numbers. Use a loop to log each number multiplied by 3.
+var a = [2,4,6,8,10];
+for (var i=0;i<a.length;i++){
+    console.log(a[i]*3);
+}
 // Q: Use array destructuring to assign the first three elements of an array to separate variables. Log these variables.
+var integers = [90,10,80,50];
+var [first,second,third,fourth] = integers;
+console.log("log of first value " + first);
+console.log("log of second value " + second);
+console.log("log of third value " + third);
+
 // Q: Use the spread operator to merge two arrays into a new array and add a new element at the end. Log the new array.
 // Q: Merge two objects into a new object using the spread operator. Log the resulting object.
 // Q: Write a function that takes an object and updates its city property. Log the updated object.

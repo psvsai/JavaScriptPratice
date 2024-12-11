@@ -53,9 +53,10 @@ const JS = () => {
     result.map((data1)=>console.log(data1));
 }
 JS();
+
 const result1 = () =>{
     let age = 18;
-       if(age1 =>18){
+       if(age =>18){
        console.log
        }
 }
