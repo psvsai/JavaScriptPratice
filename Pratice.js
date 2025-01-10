@@ -25,3 +25,5 @@ function name(name1,name2){
    }
    let pratice = myself(100,200);
    console.log(pratice)
+
+   //

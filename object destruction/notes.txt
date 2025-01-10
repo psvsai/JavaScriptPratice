@@ -1,0 +1,30 @@
+object destruction follows flower brackets "  { }  "
+array  destruction follows square brackets "  [ ]   "
+
+Ex - object destruction with syntax
+const fetch = {
+    name : "Mahesh",
+    age : 24,
+    hobbies : "Playing cricket and badmiton",
+    
+}
+
+const {name, age, hobbies} = fetch;
+console.log(name);
+console.log(age);
+console.log(hobbies);
+
+syntax :- 
+const{data,data2.data3} = object name;
+
+array destruction
+
+var num = [2,3,4,5,6,7,8];
+var [first,secong,third,fourth,fifth,sixth,seveth,eighth]
+console.log(first);
+console.log(sixth);
+console.log(eighth);
+
+syntax :-
+var [first,second,third] = array;
+print;

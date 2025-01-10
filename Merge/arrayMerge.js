@@ -12,3 +12,6 @@ var nam0 = ["Pasupuleti Sri Venkata"];
 var nam1 = ["Sai Mahesh"];
 var name = [...nam0, ...nam1];
 console.log(name);
+
+//array destruction
+var 

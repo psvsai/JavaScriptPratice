@@ -73,3 +73,25 @@ const employee = {
 const {employeename,employeeid,company,experience}= employee;
 console.log(company());
 console.log(experience());
+
+const stock1 = {
+    stocks : ["Zomato","Swiggy","Dmart","Vishal Mart"],
+    presentPrice : [287,512,3476,72],
+    knowledge : {
+        summary1 : "Zomato and swiggy are top two food delivery companies in India",
+        summary2 : "Many customer are visit to dmart in regualr basic most middle class family choose to buy here,And vishal mart too",
+      }
+    }
+
+const stock2 = {
+    stocks : ["wipro","Tcs","HCL"],
+    presentPrice : [398,1289,700],
+    knowledge : {
+        summary1 : "MNC's and Bank are backbone to market because more inverster are show interest to buy these stock",
+        summary2 : "Buying stock is easy and u have to know when to sell those stock in a correct way"
+    }
+
+}
+
+const stocks = {...stock2, ...stock1};
+console.log(stocks);

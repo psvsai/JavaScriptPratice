@@ -54,3 +54,47 @@ A Promise in JavaScript is an object representing the eventual completion or fai
 Promises make it easier to work with asynchronous code by allowing you to handle results .
     }
 }
+
+
+ To check if a variable is an array, use Array.isArray(variable). Here's how you can do it:
+
+javascript
+Copy code
+if (!Array.isArray(variable)) {
+  // If the variable is not an array, do something
+}
+Explanation:
+Array.isArray(variable): This method checks whether the given variable is an array.
+
+Returns true if the variable is an array.
+Returns false otherwise.
+!Array.isArray(variable): This negates the result, so the code inside the if block runs if the variable is not an array.
+
+
+Source for chatgpt 
+
+
+Comprehensive List of Built-in Objects
+1. Fundamental Objects: Object, Function, Boolean, Symbol, Error
+2. Numbers and Dates: Number, Math, Date
+3. Text Processing: String, RegExp
+4. Indexed Collections: Array, TypedArray, Map, Set
+5. Keyed Collections: WeakMap, WeakSet
+6. Structured Data: ArrayBuffer, JSON, DataView
+
+
+
+
+var numbers = [2,4,6,8];
+var result = numbers.reduce((acc,curr) => acc*curr);
+
+(acc, curr) => acc * curr
+This function takes two parameters:
+
+acc (Accumulator): Stores the accumulated result from the previous iterations. It starts with the initial value (1 in this case).
+curr (Current Value): Represents the current element in the array being processed.
+
+
+
+this. 
+The object that is excuting the current function.

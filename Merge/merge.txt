@@ -1,0 +1,5 @@
+Merge means combining
+javascript merging two or more array,objects,or other datastructure into one..
+
+
+using sperad operator(...);
