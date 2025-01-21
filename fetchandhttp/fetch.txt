@@ -1,0 +1,18 @@
+fetch api : -fetch is used tob get data over the network
+syntax :-
+      let p = fetch('url' [options])
+                   options hepls to find the endpoint
+                   without options a get request is sent
+                 --->  create(POST)
+                 --->  update(PUT)
+                 --->  delete(DELETE);
+
+Getting response in 2 stages process
+
+-->AN object of response class containing status and Ok
+status :- The https status code  , Eg ;- 200
+ok :- boolean true if the https status code is b/w 200-299
+           
+After tht wew need to vall another methods to access the body in diffferent fromats 
+      response.text()
+      response.json();

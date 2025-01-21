@@ -1,0 +1,15 @@
+15-01-2025
+http ;- Hypertext transfer protocol
+http consist of many methods but we use 4 main methods 
+they are :-
+     1) GET :- we can use it for read 
+     2) POSt :- we can use it for create 
+     3) PUT :- we can use it for update
+     4) DELETE :- it helps to DELETE
+
+It is called " CRUD :- Create , Read , Update , Delete ".
+
+GET :- Fetch the data from server
+POST :- Is used to Create 
+PUT :- Is used to Update
+DELETEn :- Is used to Delete 
